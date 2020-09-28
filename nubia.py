@@ -89,8 +89,7 @@ class Nubia:
 
     @staticmethod
     def _download_progress_bar(current, total, width=80):
-        print("Downloading: %d%% [%d / %d] bytes" % (
-            current / total * 100, current, total))
+        pass
 
     def _roberta_similarity(self, ref, hyp):
         tokens = self.roberta_STS.encode(ref, hyp)
